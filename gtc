@@ -1,0 +1,7 @@
+#!/bin/bash
+file=$1
+message=$2
+
+git commit "$file" -m "$message"
+
+git push
