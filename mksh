@@ -1,0 +1,13 @@
+#!/bin/bash
+
+SCRIPT=$1
+
+touch $SCRIPT
+echo '#!/bin/bash' >> $SCRIPT
+chmod 755 $SCRIPT
+
+git add $SCRIPT
+git commit -m "added $SCRIPT"
+git push
+
+vim $SCRIPT
